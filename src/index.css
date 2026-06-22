@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #061121;
+  --color-brand-navy-light: #0A192F;
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-light: #F3E5AB;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f8f9fa; /* slightly richer off-white than pure white */
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.bg-brand-navy {
+  background-color: var(--color-brand-navy);
+}
+
+.text-brand-gold {
+  color: var(--color-brand-gold);
+}
+
+.bg-brand-gold {
+  background-color: var(--color-brand-gold);
+}
+
+.text-brand-navy {
+  color: var(--color-brand-navy);
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-dark {
+  background: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Smooth gradients */
+.bg-gradient-luxury {
+  background: linear-gradient(135deg, var(--color-brand-navy) 0%, var(--color-brand-navy-light) 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(to right, #D4AF37, #F3E5AB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
