@@ -6,6 +6,7 @@ import { IoIosMail } from "react-icons/io";
 
 import { useState, useEffect } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
+import logoImg from './assets/logo.png';
 
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
@@ -23,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/src/assets/logo.png" alt="Alok Furniture Logo" className="h-10 w-auto object-contain rounded-full" />
+              <img src={logoImg} alt="Alok Furniture Logo" className="h-10 w-auto object-contain rounded-full" />
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
@@ -71,7 +72,7 @@ const Footer = () => {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 pointer-events-none -skew-x-12 transform origin-top-right"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
         <div className="col-span-1 md:col-span-1">
-          <img src="/src/assets/logo.png" alt="Alok Furniture Logo" className="h-14 w-auto object-contain rounded-full" />
+          <img src={logoImg} alt="Alok Furniture Logo" className="h-14 w-auto object-contain rounded-full" />
           <p className="text-sm mb-6 text-gray-400">Furniture That Define Your Space. Modern, Classy, and Durable pieces crafted to elevate your home aesthetics.</p>
           <div className="flex space-x-4">
             <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-gray-400 hover:bg-brand-gold hover:text-brand-navy hover:border-transparent transition-all duration-300">
